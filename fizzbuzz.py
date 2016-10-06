@@ -1,7 +1,10 @@
 import sys
 
-for arg in sys.argv[1:]:
-    n = int(arg)
+if sys.argv[1:]:
+    for arg in sys.argv[1:]:
+        n = int(arg)
+else:
+    n = int(input("How high do you want to count? "))
 
 x = 1
 
