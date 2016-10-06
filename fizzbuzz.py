@@ -1,9 +1,13 @@
 import sys
 
-if sys.argv[1:]:
-    for arg in sys.argv[1:]:
-        n = int(arg)
-else:
+try:
+    if sys.argv[1:]:
+        for arg in sys.argv[1:]:
+            n = int(arg)
+    else:
+        n = int(input("How high do you want to count? "))
+except ValueError:
+    print("Please enter a positive integer.")
     n = int(input("How high do you want to count? "))
 
 x = 1
