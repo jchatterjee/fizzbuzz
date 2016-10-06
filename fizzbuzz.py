@@ -1,4 +1,8 @@
-n = 100
+import sys
+
+for arg in sys.argv[1:]:
+    n = int(arg)
+
 x = 1
 
 print("Fizz Buzz counting up to {}".format(n))
